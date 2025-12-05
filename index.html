@@ -3,91 +3,88 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mohammad Hesam - GitHub Profile</title>
+<title>Mohammad Hesam - Portfolio</title>
 <style>
-  /* --- Reset & Base --- */
   * { margin:0; padding:0; box-sizing:border-box; }
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #e0e0e0;
+    line-height:1.7;
     padding: 20px;
-    line-height: 1.7;
   }
 
-  h2, h3 { color: #ffdd59; margin-bottom:10px; }
+  h1,h2,h3 { color: #ffdd59; margin-bottom:10px; }
+  a { color:#1abc9c; text-decoration:none; transition:0.3s; }
+  a:hover { color:#16a085; text-decoration:underline; }
 
-  hr {
-    border: 0;
-    border-top: 2px solid rgba(255,255,255,0.1);
-    margin:30px 0;
-  }
-
-  a {
-    color: #1abc9c;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  a:hover { text-decoration: underline; color: #16a085; }
-
-  /* --- Navbar --- */
   nav {
     background: rgba(0,0,0,0.6);
     border-radius: 15px;
-    padding: 15px 25px;
-    margin-bottom: 30px;
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    flex-wrap: wrap;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    padding:15px 25px;
+    margin-bottom:30px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:15px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
   }
-  nav a { font-weight: bold; }
+  nav a { font-weight:bold; }
 
-  /* --- Container Cards --- */
+  .hero {
+    text-align:center;
+    padding:50px 20px;
+  }
+  .hero img {
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:3px solid #ffdd59;
+    margin-bottom:20px;
+  }
+
   .card {
     background: rgba(0,0,0,0.6);
     border-radius: 15px;
-    padding: 20px 25px;
-    margin-bottom: 30px;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+    padding:20px 25px;
+    margin-bottom:30px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
     transition: transform 0.3s, box-shadow 0.3s;
   }
   .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+    box-shadow:0 15px 35px rgba(0,0,0,0.7);
   }
 
-  /* --- Skills --- */
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
-  .skills img { transition: transform 0.3s; border-radius:8px; }
-  .skills img:hover { transform: scale(1.1); }
+  .skills { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+  .skills img { transition:0.3s; border-radius:8px; }
+  .skills img:hover { transform:scale(1.1); }
 
-  /* --- GitHub Stats --- */
   .github-stats img { border-radius:15px; width:100%; max-width:600px; display:block; margin:0 auto; }
 
-  /* --- Projects --- */
   .project-link { color:#ffdd59; font-weight:bold; }
 
-  /* --- Contact --- */
-  .contact img { margin-top:15px; border-radius:12px; transition: transform 0.3s; }
-  .contact img:hover { transform: scale(1.05); }
+  .contact img { margin-top:15px; border-radius:12px; transition:0.3s; }
+  .contact img:hover { transform:scale(1.05); }
 
-  /* --- Responsive --- */
-  @media (max-width:768px) { .skills { justify-content:center; } nav { flex-direction:column; } }
-
+  @media(max-width:768px){
+    .skills { justify-content:center; }
+    nav { flex-direction:column; align-items:center; }
+  }
 </style>
 </head>
 <body>
 
-<!-- Navbar -->
+
+
+<section class="hero" id="hero">
+  <img src="https://avatars.githubusercontent.com/molanjad2011" alt="Mohammad Hesam">
+  <h1>Mohammad Hesam</h1>
+</section>
+
 <nav>
+  <a href="#hero">Home</a>
   <a href="#about">About Me</a>
-  <a href="#stats">GitHub Stats</a>
   <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
   <a href="#github">GitHub</a>
@@ -95,23 +92,13 @@
 </nav>
 
 <div class="card" id="about">
-  <h2>👋 Welcome to My GitHub Profile</h2>
-  <h3>🧑‍💻 About Me</h3>
-  <p>I'm <strong>Mohammad Hesam</strong>.</p>
-  <p>
-    I spend most of my time coding on Linux, learning new languages, and building practical projects.<br>
-    I'm introverted, focused, and aiming to become a <strong>DevOps Engineer</strong> in the future.<br>
-    I enjoy working alone and writing clean, optimized code that actually works in real environments.
-  </p>
+  <h2>🧑‍💻 About Me</h2>
+  <p>I'm <strong>Mohammad Hesam</strong>. I spend most of my time coding on Linux, learning new languages, and building practical projects. I'm introverted, focused, and aiming to become a <strong>DevOps Engineer</strong>. I enjoy writing clean, optimized code that actually works in real environments.</p>
 </div>
 
-<div class="card github-stats" id="stats">
-  <h3>📊 GitHub Status</h3>
-  <img src="https://stats-plum-nine.vercel.app/api?username=molanjad2011&show_icons=false&theme=tokyonight&hide_border=false&hide_rank=false&rank_icon=github&cache_seconds=2000" height="180" alt="GitHub Stats">
-</div>
 
 <div class="card" id="skills">
-  <h3>🛠️ Skills & Tools</h3>
+  <h2>🛠️ Skills & Tools</h2>
   <div class="skills">
     <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
     <img src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go">
@@ -119,7 +106,6 @@
     <img src="https://img.shields.io/badge/csharp-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
     <img src="https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity">
     <img src="https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash">
-    <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
     <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
     <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
     <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
@@ -131,25 +117,25 @@
 </div>
 
 <div class="card" id="projects">
-  <h3>🚀 Projects</h3>
-  <p>
-    <span class="project-link">Socket Communication</span><br>
-    A simple yet functional Python socket communication (client/server) project.<br>
-    <a href="https://github.com/molanjad2011/socket-python">socket-python</a>
-  </p>
+  <h2>🚀 Projects</h2>
+  <p><span class="project-link">Socket Communication</span><br>
+  A simple Python socket communication (client/server) project.<br>
+  <a href="https://github.com/molanjad2011/socket-python">socket-python</a></p>
 </div>
 
+
 <div class="card" id="github">
-  <h3>🐙 GitHub</h3>
+  <h2>🐙 GitHub</h2>
   <p>Check out my GitHub profile:</p>
   <a href="https://github.com/molanjad2011" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-molanjad2011-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile">
   </a>
 </div>
 
+
 <div class="card" id="contact">
-  <h3>📬 Contact</h3>
-  <p>📧 Email: <a href="mailto:thus.is.zero.point@gmail.com">thus.is.zero.point@gmail.com</a></p>
+  <h2>📬 Contact</h2>
+  <p>Email: <a href="mailto:thus.is.zero.point@gmail.com">thus.is.zero.point@gmail.com</a></p>
   <div class="contact">
     <a href="http://www.coffeete.ir/mohammad_hesam_molanjad">
       <img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" width="220" alt="Coffeete Profile"/>
