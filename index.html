@@ -6,29 +6,21 @@
 <title>Mohammad Hesam - GitHub Profile</title>
 <style>
   /* --- Reset & Base --- */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
+  * { margin:0; padding:0; box-sizing:border-box; }
   body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
     color: #e0e0e0;
-    padding: 40px 20px;
+    padding: 20px;
     line-height: 1.7;
   }
 
-  h2, h3 {
-    color: #ffdd59;
-    margin-bottom: 10px;
-  }
+  h2, h3 { color: #ffdd59; margin-bottom:10px; }
 
   hr {
     border: 0;
-    border-top: 2px solid rgba(255, 255, 255, 0.1);
-    margin: 30px 0;
+    border-top: 2px solid rgba(255,255,255,0.1);
+    margin:30px 0;
   }
 
   a {
@@ -36,22 +28,31 @@
     text-decoration: none;
     transition: 0.3s;
   }
+  a:hover { text-decoration: underline; color: #16a085; }
 
-  a:hover {
-    text-decoration: underline;
-    color: #16a085;
+  /* --- Navbar --- */
+  nav {
+    background: rgba(0,0,0,0.6);
+    border-radius: 15px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
   }
+  nav a { font-weight: bold; }
 
   /* --- Container Cards --- */
   .card {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.6);
     border-radius: 15px;
     padding: 20px 25px;
     margin-bottom: 30px;
     box-shadow: 0 8px 25px rgba(0,0,0,0.5);
     transition: transform 0.3s, box-shadow 0.3s;
   }
-
   .card:hover {
     transform: translateY(-5px);
     box-shadow: 0 15px 35px rgba(0,0,0,0.7);
@@ -63,110 +64,82 @@
     flex-wrap: wrap;
     gap: 10px;
   }
-
-  .skills img {
-    transition: transform 0.3s;
-    border-radius: 8px;
-  }
-
-  .skills img:hover {
-    transform: scale(1.1);
-  }
+  .skills img { transition: transform 0.3s; border-radius:8px; }
+  .skills img:hover { transform: scale(1.1); }
 
   /* --- GitHub Stats --- */
-  .github-stats img {
-    border-radius: 15px;
-    width: 100%;
-    max-width: 600px;
-    display: block;
-    margin: 0 auto;
-  }
+  .github-stats img { border-radius:15px; width:100%; max-width:600px; display:block; margin:0 auto; }
 
   /* --- Projects --- */
-  .project-link {
-    color: #ffdd59;
-    font-weight: bold;
-  }
+  .project-link { color:#ffdd59; font-weight:bold; }
 
   /* --- Contact --- */
-  .contact img {
-    margin-top: 15px;
-    border-radius: 12px;
-    transition: transform 0.3s;
-  }
-
-  .contact img:hover {
-    transform: scale(1.05);
-  }
+  .contact img { margin-top:15px; border-radius:12px; transition: transform 0.3s; }
+  .contact img:hover { transform: scale(1.05); }
 
   /* --- Responsive --- */
-  @media (max-width: 768px) {
-    .skills {
-      justify-content: center;
-    }
-  }
+  @media (max-width:768px) { .skills { justify-content:center; } nav { flex-direction:column; } }
+
 </style>
 </head>
 <body>
 
-  <div class="card">
-    <h2>👋 Welcome to My GitHub Profile</h2>
-  </div>
+<!-- Navbar -->
+<nav>
+  <a href="#about">About Me</a>
+  <a href="#stats">GitHub Stats</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#github">GitHub</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-  <div class="card">
-    <h3>🧑‍💻 About Me</h3>
-    <p>I'm <strong>Mohammad Hesam</strong>.</p>
-    <p>
-      I spend most of my time coding on Linux, learning new languages, and building practical projects.<br>
-      I'm introverted, focused, and aiming to become a <strong>DevOps Engineer</strong> in the future.<br>
-      I enjoy working alone and writing clean, optimized code that actually works in real environments.
-    </p>
-  </div>
+<div class="card" id="about">
+  <h2>👋 Welcome to My GitHub Profile</h2>
+  <h3>🧑‍💻 About Me</h3>
+  <p>I'm <strong>Mohammad Hesam</strong>.</p>
+  <p>
+    I spend most of my time coding on Linux, learning new languages, and building practical projects.<br>
+    I'm introverted, focused, and aiming to become a <strong>DevOps Engineer</strong> in the future.<br>
+    I enjoy working alone and writing clean, optimized code that actually works in real environments.
+  </p>
+</div>
 
-  <div class="card github-stats">
-    <h3>📊 GitHub Status</h3>
-    <img src="https://stats-plum-nine.vercel.app/api?username=molanjad2011&show_icons=false&theme=tokyonight&hide_border=false&hide_rank=false&rank_icon=github&cache_seconds=2000" height="180" alt="GitHub Stats">
-  </div>
+<div class="card github-stats" id="stats">
+  <h3>📊 GitHub Status</h3>
+  <img src="https://stats-plum-nine.vercel.app/api?username=molanjad2011&show_icons=false&theme=tokyonight&hide_border=false&hide_rank=false&rank_icon=github&cache_seconds=2000" height="180" alt="GitHub Stats">
+</div>
 
-  <div class="card">
-    <h3>🛠️ Skills & Tools</h3>
-    <div class="skills">
-      <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-      <img src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go">
-      <img src="https://img.shields.io/badge/lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua">
-      <img src="https://img.shields.io/badge/csharp-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
-      <img src="https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity">
-      <img src="https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash">
-      <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-      <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
-      <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-      <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-      <img src="https://img.shields.io/badge/vim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim">
-      <img src="https://img.shields.io/badge/neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim">
-      <img src="https://img.shields.io/badge/vscodium-2F80ED?style=for-the-badge&logo=vscodium&logoColor=white" alt="VSCodium">
-      <img src="https://img.shields.io/badge/archlinux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white" alt="Arch Linux">
-    </div>
+<div class="card" id="skills">
+  <h3>🛠️ Skills & Tools</h3>
+  <div class="skills">
+    <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+    <img src="https://img.shields.io/badge/go-00ADD8?style=for-the-badge&logo=go&logoColor=white" alt="Go">
+    <img src="https://img.shields.io/badge/lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="Lua">
+    <img src="https://img.shields.io/badge/csharp-239120?style=for-the-badge&logo=csharp&logoColor=white" alt="C#">
+    <img src="https://img.shields.io/badge/unity-000000?style=for-the-badge&logo=unity&logoColor=white" alt="Unity">
+    <img src="https://img.shields.io/badge/bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" alt="Bash">
+    <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+    <img src="https://img.shields.io/badge/linux-FCC624?style=for-the-badge&logo=linux&logoColor=black" alt="Linux">
+    <img src="https://img.shields.io/badge/docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+    <img src="https://img.shields.io/badge/git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+    <img src="https://img.shields.io/badge/vim-019733?style=for-the-badge&logo=vim&logoColor=white" alt="Vim">
+    <img src="https://img.shields.io/badge/neovim-57A143?style=for-the-badge&logo=neovim&logoColor=white" alt="Neovim">
+    <img src="https://img.shields.io/badge/vscodium-2F80ED?style=for-the-badge&logo=vscodium&logoColor=white" alt="VSCodium">
+    <img src="https://img.shields.io/badge/archlinux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white" alt="Arch Linux">
   </div>
+</div>
 
-  <div class="card">
-    <h3>🚀 Projects</h3>
-    <p>
-      <span class="project-link">Socket Communication</span><br>
-      A simple yet functional Python socket communication (client/server) project.<br>
-      <a href="https://github.com/molanjad2011/socket-python">socket-python</a>
-    </p>
-  </div>
+<div class="card" id="projects">
+  <h3>🚀 Projects</h3>
+  <p>
+    <span class="project-link">Socket Communication</span><br>
+    A simple yet functional Python socket communication (client/server) project.<br>
+    <a href="https://github.com/molanjad2011/socket-python">socket-python</a>
+  </p>
+</div>
 
-  <div class="card">
-    <h3>📬 Contact</h3>
-    <p>📧 Email: <a href="mailto:thus.is.zero.point@gmail.com">thus.is.zero.point@gmail.com</a></p>
-    <div class="contact">
-      <a href="http://www.coffeete.ir/mohammad_hesam_molanjad">
-        <img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" width="220" alt="Coffeete Profile"/>
-      </a>
-    </div>
-  </div>
-<div class="card">
+<div class="card" id="github">
   <h3>🐙 GitHub</h3>
   <p>Check out my GitHub profile:</p>
   <a href="https://github.com/molanjad2011" target="_blank">
@@ -174,6 +147,15 @@
   </a>
 </div>
 
+<div class="card" id="contact">
+  <h3>📬 Contact</h3>
+  <p>📧 Email: <a href="mailto:thus.is.zero.point@gmail.com">thus.is.zero.point@gmail.com</a></p>
+  <div class="contact">
+    <a href="http://www.coffeete.ir/mohammad_hesam_molanjad">
+      <img src="http://www.coffeete.ir/images/buttons/lemonchiffon.png" width="220" alt="Coffeete Profile"/>
+    </a>
+  </div>
+</div>
+
 </body>
 </html>
-
