@@ -46,15 +46,14 @@ nav a {
 
 .hero {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
 }
 
 .hero img {
   width: 160px;
   height: 160px;
-  border-radius: 50%;
-  border: 5px solid #ffdd59;
-
+  border-radius: 10%;
+  border: 2px solid #ffdd59;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
