@@ -6,7 +6,7 @@ box-sizing: border-box;
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  background: #0f2027;
   color: #e0e0e0;
   line-height: 1.6;
   padding: 20px;
