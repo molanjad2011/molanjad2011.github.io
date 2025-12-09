@@ -28,21 +28,6 @@ a:hover {
   text-decoration: underline;
 }
 
-nav {
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
-  border: 1px solid #55aa7f;
-  padding: 15px 25px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-nav a {
-  font-weight: bold;
-}
 
 .hero {
   text-align: center;
@@ -53,22 +38,21 @@ nav a {
   width: 160px;
   height: 160px;
   border-radius: 10%;
-  border: 2px solid #ffdd59;
+ border: 2px solid #ffdd59;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
-
+.hero img:hover {
+  transform: scale(1.1);
+}
 .card {
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 10px;
+  border-radius: 0px;
   border: 1px solid #55aa7f;
   padding: 20px 25px;
   margin-bottom: 30px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
 
 .skills {
   display: flex;
@@ -82,9 +66,9 @@ nav a {
   border-radius: 0px;
 }
 
-.skills img:hover {
+/*.skills img:hover {
   transform: scale(1.1);
-}
+}*/
 
 .project-link {
   color: #ffdd59;
@@ -109,11 +93,6 @@ nav a {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    align-items: center;
-  }
 
   .skills {
     justify-content: center;
