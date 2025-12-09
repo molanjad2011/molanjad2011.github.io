@@ -37,8 +37,8 @@ a:hover {
 .hero img {
   width: 160px;
   height: 160px;
-  border-radius: 10%;
- border: 2px solid #ffdd59;
+  border-radius: 80%;
+/*   border: 1px solid #ffdd59; */
   transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 .hero img:hover {
@@ -46,11 +46,14 @@ a:hover {
 }
 .card {
   background: rgba(0, 0, 0, 0.6);
-  border-radius: 0px;
+  border-radius: 10px;
   border: 1px solid #55aa7f;
   padding: 20px 25px;
   margin-bottom: 30px;
   transition: transform 0.3s, box-shadow 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
 }
 
 
