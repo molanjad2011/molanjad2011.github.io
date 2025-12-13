@@ -9,7 +9,7 @@ body {
   background: #0f2027;
   color: #e0e0e0;
   line-height: 1.6;
-  padding: 20px;
+  padding: 10px;
   animation: fadeIn 1s ease forwards;
 }
 
@@ -75,7 +75,7 @@ a:hover {
 }
 
 .hero img:hover {
-  transform: scale(1.07) rotate(1deg);
+  transform: scale(1.07) rotate(2deg);
   box-shadow: 0 0 20px #55ff7f55;
 }
 
