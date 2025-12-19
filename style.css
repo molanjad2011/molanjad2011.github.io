@@ -1,26 +1,22 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0f2027;
-  color: #e0e0e0;
+  background: #0a0a0a; /* مشکی تیره */
+  color: #e0e0e0;     /* سفید خاکستری روشن */
   line-height: 1.6;
   padding: 10px;
   animation: fadeIn 1s ease forwards;
 }
 
-
-
-
 @keyframes stars {
   from { transform: translateY(0); }
   to { transform: translateY(-1000px); }
 }
-
 
 @keyframes fadeIn {
   from { opacity: 0; }
@@ -28,7 +24,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: #ffdd59;
+  color: #cccccc; /* خاکستری روشن برای متن */
   margin-bottom: 10px;
   animation: slideDown 0.7s ease forwards;
 }
@@ -45,14 +41,14 @@ h1, h2, h3 {
 }
 
 a {
-  color: #1abc9c;
+  color: #aaaaaa; /* خاکستری */
   text-decoration: none;
   transition: color 0.3s, text-shadow 0.4s;
 }
 
 a:hover {
-  color: #16a085;
-  text-shadow: 0 0 8px #16a085;
+  color: #ffffff; /* سفید در هاور */
+  text-shadow: 0 0 6px #ffffff55;
   text-decoration: underline;
 }
 
@@ -72,17 +68,18 @@ a:hover {
   height: 160px;
   border-radius: 60%;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+  filter: grayscale(100%); /* سیاه سفید کردن تصویر */
 }
 
 .hero img:hover {
   transform: scale(1.07) rotate(2deg);
-  box-shadow: 0 0 20px #55ff7f55;
+  box-shadow: 0 0 20px #ffffff33;
 }
 
 .card {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(20, 20, 20, 0.8); /* مشکی شفاف */
   border-radius: 10px;
-  border: 1px solid #55aa7f;
+  border: 1px solid #555555; /* خاکستری */
   padding: 20px 25px;
   margin-bottom: 30px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
@@ -96,7 +93,7 @@ a:hover {
 
 .card:hover {
   transform: translateY(-7px);
-   box-shadow: 0 5px 25px #000000;
+  box-shadow: 0 5px 25px #222222;
 }
 
 .skills {
@@ -108,15 +105,16 @@ a:hover {
 
 .skills img {
   transition: transform 0.25s ease, filter 0.25s ease;
+  filter: grayscale(100%);
 }
 
 .skills img:hover {
   transform: scale(1.1);
-  filter: brightness(1.3);
+  filter: brightness(1.2) grayscale(0%);
 }
 
 .project-link {
-  color: #ffdd59;
+  color: #cccccc;
   font-weight: bold;
   transition: letter-spacing 0.3s ease;
 }
@@ -132,17 +130,19 @@ a:hover {
   display: block;
   margin: 0 auto;
   animation: fadeIn 1.5s ease forwards;
+  filter: grayscale(100%);
 }
 
 .contact img {
   margin-top: 15px;
   border-radius: 10px;
   transition: transform 0.3s ease, filter 0.3s ease;
+  filter: grayscale(100%);
 }
 
 .contact img:hover {
   transform: scale(1.05);
-  filter: brightness(1.15);
+  filter: brightness(1.15) grayscale(0%);
 }
 
 .skills {
