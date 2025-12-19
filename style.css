@@ -6,8 +6,8 @@
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0a0a0a; /* مشکی تیره */
-  color: #e0e0e0;     /* سفید خاکستری روشن */
+  background: #0a0a0a;
+  color: #e0e0e0;
   line-height: 1.6;
   padding: 10px;
   animation: fadeIn 1s ease forwards;
@@ -24,7 +24,7 @@ body {
 }
 
 h1, h2, h3 {
-  color: #cccccc; /* خاکستری روشن برای متن */
+  color: #cccccc;
   margin-bottom: 10px;
   animation: slideDown 0.7s ease forwards;
 }
@@ -41,13 +41,13 @@ h1, h2, h3 {
 }
 
 a {
-  color: #aaaaaa; /* خاکستری */
+  color: #aaaaaa;
   text-decoration: none;
   transition: color 0.3s, text-shadow 0.4s;
 }
 
 a:hover {
-  color: #ffffff; /* سفید در هاور */
+  color: #ffffff;
   text-shadow: 0 0 6px #ffffff55;
   text-decoration: underline;
 }
@@ -68,7 +68,7 @@ a:hover {
   height: 160px;
   border-radius: 60%;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  filter: grayscale(100%); /* سیاه سفید کردن تصویر */
+  filter: grayscale(100%);
 }
 
 .hero img:hover {
@@ -77,9 +77,9 @@ a:hover {
 }
 
 .card {
-  background: rgba(20, 20, 20, 0.8); /* مشکی شفاف */
+  background: rgba(20, 20, 20, 0.8);
   border-radius: 10px;
-  border: 1px solid #555555; /* خاکستری */
+  border: 1px solid #555555;
   padding: 20px 25px;
   margin-bottom: 30px;
   transition: transform 0.35s ease, box-shadow 0.35s ease;
