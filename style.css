@@ -5,95 +5,45 @@
 }
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #0a0a0a;
-  color: #e0e0e0;
+  font-family: 'Fira Code', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #011627;
+  color: #d6deeb;
   line-height: 1.6;
-  padding: 10px;
-  animation: fadeIn 1s ease forwards;
-}
-
-@keyframes stars {
-  from { transform: translateY(0); }
-  to { transform: translateY(-1000px); }
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-h1, h2, h3 {
-  color: #cccccc;
-  margin-bottom: 10px;
-  animation: slideDown 0.7s ease forwards;
-}
-
-@keyframes slideDown {
-  from {
-    opacity: 0;
-    transform: translateY(-10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  padding: 20px;
 }
 
 a {
-  color: #aaaaaa;
+  color: #82aaff;
   text-decoration: none;
-  transition: color 0.3s, text-shadow 0.4s;
 }
 
 a:hover {
-  color: #ffffff;
-  text-shadow: 0 0 6px #ffffff55;
-  text-decoration: underline;
+  color: #c792ea;
 }
 
 .hero {
   text-align: center;
-  padding: 5px;
-  animation: fadeUp 1.2s ease forwards;
-}
-
-@keyframes fadeUp {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  margin-bottom: 30px;
 }
 
 .hero img {
-  width: 160px;
-  height: 160px;
-  border-radius: 60%;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  filter: grayscale(100%);
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  border: 2px solid #82aaff;
+  transition: transform 0.3s ease;
 }
 
 .hero img:hover {
-  transform: scale(1.07) rotate(2deg);
-  box-shadow: 0 0 20px #ffffff33;
+  transform: scale(1.05);
 }
 
 .card {
-  background: rgba(20, 20, 20, 0.8);
+  background-color: #161616;
   border-radius: 10px;
-  border: 1px solid #555555;
-  padding: 20px 25px;
-  margin-bottom: 30px;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
-  animation: cardFade 0.9s ease forwards;
-}
-
-@keyframes cardFade {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.card:hover {
-  transform: translateY(-7px);
-  box-shadow: 0 5px 25px #222222;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-left: 4px solid #82aaff;
 }
 
 .skills {
@@ -104,47 +54,11 @@ a:hover {
 }
 
 .skills img {
-  transition: transform 0.25s ease, filter 0.25s ease;
-  filter: grayscale(100%);
+  filter: brightness(0.9);
+  transition: transform 0.2s;
 }
 
 .skills img:hover {
   transform: scale(1.1);
-  filter: brightness(1.2) grayscale(0%);
-}
-
-.project-link {
-  color: #cccccc;
-  font-weight: bold;
-  transition: letter-spacing 0.3s ease;
-}
-
-.project-link:hover {
-  letter-spacing: 1px;
-}
-
-.github-stats img {
-  border-radius: 10px;
-  width: 100%;
-  max-width: 600px;
-  display: block;
-  margin: 0 auto;
-  animation: fadeIn 1.5s ease forwards;
-  filter: grayscale(100%);
-}
-
-.contact img {
-  margin-top: 15px;
-  border-radius: 10px;
-  transition: transform 0.3s ease, filter 0.3s ease;
-  filter: grayscale(100%);
-}
-
-.contact img:hover {
-  transform: scale(1.05);
-  filter: brightness(1.15) grayscale(0%);
-}
-
-.skills {
-  justify-content: center;
+  filter: brightness(1.2);
 }
