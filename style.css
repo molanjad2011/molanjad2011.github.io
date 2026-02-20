@@ -59,22 +59,45 @@ a:hover {
   color: var(--link-hover);
 }
 
-.hero {
-  text-align: center;
-  margin-bottom: 30px;
-}
+/* ===== عکس پروفایل با شکل هندسی متغیر ===== */
 
 .hero img {
   width: 140px;
   height: 140px;
-  border-radius: 5%;
+  object-fit: cover;
+
+  /* شکل هندسی متغیر - همین قسمت رو می‌خواستید */
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+  /* استایل‌های قبلی شما */
   border: 2px solid var(--link-color);
   transition: transform 0.3s, border-color 0.3s;
+
+  /* انیمیشن برای تغییر شکل */
+  animation: morphShape 8s ease-in-out infinite;
 }
 
+/* انیمیشن تغییر شکل - اختیاری */
+@keyframes morphShape {
+  0%, 100% {
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+  }
+  25% {
+    border-radius: 50% 50% 30% 70% / 50% 40% 60% 50%;
+  }
+  50% {
+    border-radius: 70% 30% 50% 50% / 40% 60% 40% 60%;
+  }
+  75% {
+    border-radius: 40% 60% 70% 30% / 60% 30% 70% 40%;
+  }
+}
+
+/* هاور - اختیاری */
 .hero img:hover {
   transform: scale(1.05);
   border-color: var(--link-hover);
+  animation-play-state: paused;
 }
 /* .peoms{
   background-color: var(--card-bg) ;
@@ -108,8 +131,9 @@ body.light .card {
 }
 
 .card:hover {
-  transform: scale(1.05) rotateZ(1deg);
+/*   transform: scale(1.05) rotateZ(1deg); */
   filter: brightness(1.2);
+  transform: scale(1.01);
   box-shadow: 0 15px 30px var(--card-shadow);
 }
 
