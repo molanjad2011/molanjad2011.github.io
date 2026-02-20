@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="https://avatars.githubusercontent.com/molanjad2011" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Mohammad Hesam </title>
+</head>
+<body>
+
+  <section class="hero" id="hero">
+    <img src="https://avatars.githubusercontent.com/molanjad2011" alt="Mohammad Hesam">
+  </section>
+
+
+<br>
+  <div class="card" id="card" lang="fa" dir="rtl" >
+    <script type="text/javascript" language="JavaScript">ganjoorblocktitle = '';</script>
+    <script type="text/javascript" language="JavaScript" src="https://c.ganjoor.net/beyt.php?p=2"></script>
+  </div>
+  <div class="card" id="about">
+    <h2>🧑‍💻 About Me</h2>
+    <p>
+      I'm <strong>Mohammad Hesam</strong>.  developer python
+    </p>
+  </div>
+
+    <div class="card" id="github">
+    <h2>🐙 GitHub</h2>
+    <p>Check out my GitHub profile:</p>
+    <a href="https://github.com/molanjad2011" target="_blank">
+      <img src="https://img.shields.io/badge/GitHub-molanjad2011-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile">
+    </a>
+  </div>
+
+  <div class="card" id="skills">
+    <h2>🛠️ Skills & Tools</h2>
+    <div class="skills">
+      <img src="https://skillicons.dev/icons?i=python" alt="Python">
+      <img src="https://skillicons.dev/icons?i=linux" alt="linux">
+      <img src="https://skillicons.dev/icons?i=git" alt="git">
+      <img src="https://skillicons.dev/icons?i=vim" alt="vim">
+      <img src="https://skillicons.dev/icons?i=neovim" alt="neovim">
+      <img src="https://skillicons.dev/icons?i=emacs" alt="emacs">
+
+
+    </div>
+  </div>
+
+  <div class="card" id="projects">
+    <h2>🚀 Projects</h2>
+
+    <p>
+      <strong>Socket Communication</strong><br>
+      A simple Python socket communication (client/server) project.<br>
+      <a href="https://github.com/molanjad2011/socket-python" target="_blank">socket-python</a>
+    </p>
+
+    <p>
+      <strong>Azan-for-muslim</strong><br>
+      Golang project that sends notifications and plays MP3 with mpv using the Fyne package.<br>
+      <a href="https://github.com/molanjad2011/azan-for-muslim" target="_blank">Azan-for-muslim</a>
+    </p>
+
+    <p>
+      <strong>HijriCalc</strong><br>
+      Hijri conversion algorithm.<br>
+      <a href="https://github.com/molanjad2011/HijriCalc" target="_blank">HijriCalc</a>
+    </p>
+  </div>
+
+
+
+  <div class="card" id="contact">
+    <h2>📬 Contact</h2>
+    <p>Email: <a href="mailto:thus.is.zero.point@gmail.com">thus.is.zero.point@gmail.com</a></p>
+    <p>coffee: <a href="http://www.coffeete.ir/mohammad_hesam_molanjad">coffeete</a></p>
+
+    </div>
+  </div>
+<button id="theme-toggle" class="theme-toggle">
+  🌙
+</button>
+
+
+<script>
+const toggleButton = document.getElementById('theme-toggle');
+
+if(localStorage.getItem('theme') === 'light'){
+  document.body.classList.add('light');
+  toggleButton.textContent = '☀️';
+}
+
+toggleButton.addEventListener('click', () => {
+  document.body.classList.toggle('light');
+
+  toggleButton.style.transform = 'rotate(360deg)';
+  setTimeout(() => toggleButton.style.transform = '', 500);
+
+  toggleButton.textContent = document.body.classList.contains('light') ? '☀️' : '🌙';
+  localStorage.setItem('theme', document.body.classList.contains('light') ? 'light' : 'dark');
+});
+
+</script>
+
+
+</body>
+</html>
